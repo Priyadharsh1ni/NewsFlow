@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import './style.css';
 import { BiBookmark } from 'react-icons/bi';
 import { IoIosRemoveCircle } from "react-icons/io";
