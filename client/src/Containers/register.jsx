@@ -79,7 +79,7 @@ function Register() {
                 </div>
                 <div className="login-footer">
                     Already have an account?
-                    <a href="/login">Sign in</a>
+                    <a href="/">Sign in</a>
                 </div>
             </div>
         </div>
