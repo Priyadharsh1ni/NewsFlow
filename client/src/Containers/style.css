@@ -1,0 +1,321 @@
+.login-bg {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #6db3f2 0%, #1e69de 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.13);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 40px 32px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 100%;
+}
+
+.login-label {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 18px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    outline: none;
+}
+
+.login-input::placeholder {
+    color: #e0e0e0;
+}
+
+.login-link {
+    color: #e0e0e0;
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 18px;
+    display: block;
+    text-align: right;
+}
+
+.login-btn {
+    width: 100%;
+    background: #0a3577;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 13px 0;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 18px;
+    transition: background 0.2s;
+}
+
+.login-btn:hover {
+    background: #174ea6;
+}
+
+.social-row {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.social-btn {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(30, 105, 222, 0.08);
+    transition: box-shadow 0.2s;
+}
+
+.social-btn:hover {
+    box-shadow: 0 4px 16px rgba(30, 105, 222, 0.18);
+}
+
+.login-footer {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.login-footer a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+/* ...existing code... */
+
+.dashboard-bg {
+    background: linear-gradient(120deg, #f7fafd 60%, #e3e9f7 100%);
+    min-height: 100vh;
+    padding: 48px 0;
+}
+
+.dashboard-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(30, 105, 222, 0.08);
+    margin: 0 auto 32px auto;
+    max-width: 740px;
+    padding: 40px 44px 32px 44px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    width: 100%;
+}
+
+.dashboard-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1a237e;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.dashboard-subtitle {
+    font-size: 1.15rem;
+    color: #ee0979;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.dashboard-desc {
+    color: #444;
+    margin-bottom: 22px;
+    font-size: 1.08rem;
+}
+
+.dashboard-search {
+    width: 65%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1.5px solid #cfd8dc;
+    font-size: 1rem;
+    background: #f5f7fa;
+    transition: border 0.2s;
+}
+
+.dashboard-search:focus {
+    border: 1.5px solid #1e69de;
+    outline: none;
+}
+
+.dashboard-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.dashboard-filters select {
+    padding: 9px 14px;
+    border-radius: 8px;
+    border: 1.5px solid #cfd8dc;
+    background: #f5f7fa;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+.dashboard-filters select:focus {
+    border: 1.5px solid #1e69de;
+    outline: none;
+}
+
+.dashboard-sections {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-bottom: 28px;
+}
+
+.dashboard-section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 14px 28px;
+    box-shadow: 0 2px 12px rgba(30, 105, 222, 0.06);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.08rem;
+    color: #1a237e;
+    transition: box-shadow 0.2s, background 0.2s;
+    cursor: pointer;
+}
+
+.dashboard-section:hover {
+    background: #f0f4ff;
+    box-shadow: 0 4px 18px rgba(30, 105, 222, 0.13);
+}
+
+.dashboard-articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+}
+
+.dashboard-article {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(30, 105, 222, 0.08);
+    width: 340px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 1.5px solid #f1f3f6;
+}
+
+.dashboard-article:hover {
+    box-shadow: 0 8px 32px rgba(30, 105, 222, 0.16);
+    transform: translateY(-4px) scale(1.02);
+    border-color: #e3e9f7;
+}
+
+.dashboard-article-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: #e3e9f7;
+}
+
+.dashboard-article-content {
+    padding: 18px 18px 14px 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.dashboard-article-content h3 {
+    font-size: 1.15rem;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    color: #1a237e;
+    min-height: 48px;
+}
+
+.dashboard-article-content p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+.dashboard-article-content a {
+    color: #ee0979;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.18s;
+}
+
+.dashboard-article-content a:hover {
+    color: #1e69de;
+    text-decoration: underline;
+}
+
+.header {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.iconLink {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

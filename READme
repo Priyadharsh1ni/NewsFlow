@@ -1,0 +1,60 @@
+# Article App README
+
+## Overview
+
+This application allows users to:
+- Login and manage their account
+- Search for articles
+- Filter articles by categories, tags, or date
+- Bookmark favorite articles for later reading
+
+---
+
+## Getting Started
+
+1. **Clone the repository**
+    ```
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+2. **Install dependencies**
+    ```
+    npm install
+    ```
+
+3. **Start the application**
+    ```
+    npm start
+    ```
+
+---
+
+## Features & Instructions
+
+### 1. Login
+
+- Open the app and click on the **Login** button.
+- Enter your credentials (username and password).
+- If you don't have an account, click **Sign Up** to register.
+
+### 2. Article Search
+
+- Use the search bar at the top to enter keywords.
+- Press **Enter** or click the **Search** icon to view results.
+
+### 3. Filter Articles
+
+- Use the filter options (categories, tags, date range) on the sidebar or top menu.
+- Select your desired filters and the article list will update automatically.
+
+### 4. Bookmarks
+
+- To bookmark an article, click the **Bookmark** icon on the article card.
+- Access your bookmarked articles from the **Bookmarks** section in the menu.
+
+### 5. Logout
+
+- Click your profile/avatar and select **Logout** to end your session.
+
+---
