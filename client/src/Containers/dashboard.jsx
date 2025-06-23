@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './style.css';
 import { action } from '../redux/action';
 import { useDispatch, useSelector } from 'react-redux';
-import Button from '../Components/button';
 import ArticleList from '../Components/ArticleContainer';
 
 const categories = ['Business', 'Tech', 'Sports', 'Health', 'Science', 'Entertainment'];
@@ -19,7 +18,7 @@ function Dashboard() {
 
     useEffect(() => {
         dispatch(action.ListArticle({ search: search, category: category, country: country, source: source }));
-    }, [search, category, country, source]);
+    }, [search, category, country, source,dispatch]);
 
     return (
         <div className="dashboard-bg">

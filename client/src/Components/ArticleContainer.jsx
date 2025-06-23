@@ -20,7 +20,7 @@ function ArticleList({ articles }) {
         if (email) {
             dispatch(action.getUser({ email: email }));
         }
-    }, [email]);
+    }, [email,dispatch]);
 
     const isArticleSaved = (article) => {
         return savedArticles.some(saved => saved.url === article.url);

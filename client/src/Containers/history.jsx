@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import ArticleList from '../Components/ArticleContainer';
 import { useDispatch, useSelector } from 'react-redux';
 import { action } from '../redux/action';
-import style from './style.css';
 
 
 const History = () => {
@@ -18,19 +17,19 @@ const History = () => {
 
     useEffect(() => {
         dispatch(action.ListArticle());
-    }, [article]);
+    }, [article, dispatch]);
 
 
     useEffect(() => {
         dispatch(action.getUser({ email: email }))
-    }, []);
+    }, [dispatch, email]);
 
     useEffect(() => {
         if (user) {
             dispatch(action.getBookmarks({ user_id: user?.id }))
             setBookmarks(article);
         }
-    }, [user])
+    }, [user, dispatch, article])
 
 
 

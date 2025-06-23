@@ -77,7 +77,7 @@ const Profile = () => {
         if (email) {
             dispatch(action.getUser({email: email }));
         }
-    },[email])
+    },[email, dispatch])
 
     return (
         <><div style={{
