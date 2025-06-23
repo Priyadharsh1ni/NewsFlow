@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import style from './style.css';
-import { service } from '../redux/service';
 import { action } from '../redux/action';
 import { useDispatch } from 'react-redux';
 
@@ -65,18 +63,6 @@ function Register() {
                     />
                     <button type="submit" className="login-btn" onClick={(e) =>  handleRegister(e)}>Register</button>
                 </form>
-                <div style={{ color: '#e0e0e0', margin: '10px 0 8px 0', fontSize: 14 }}>or continue with</div>
-                <div className="social-row">
-                    <button className="social-btn">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" width={22} />
-                    </button>
-                    <button className="social-btn">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width={22} />
-                    </button>
-                    <button className="social-btn">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" width={22} />
-                    </button>
-                </div>
                 <div className="login-footer">
                     Already have an account?
                     <a href="/">Sign in</a>

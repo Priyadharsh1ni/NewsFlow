@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import style from './style.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { action } from '../redux/action';
-import axios from 'axios';
 import Loading from '../Components/loading';
 
 function Login() {
